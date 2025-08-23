@@ -1,0 +1,7 @@
+zip_iss/*
+zip/*
+build/*
+bin
+dist/*
+*runtime*
+*.AppImage

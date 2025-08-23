@@ -1,0 +1,6 @@
+[Desktop Entry]
+Name=MarketEngineClient
+Exec=AppRun
+Icon=market_engine_client_desktop
+Type=Application
+Categories=Utility
