@@ -5,7 +5,7 @@ This repo contains various build systems and configurations for Market Engine, a
 
 ## Notice
 Compiling this project on Windows is tricky and may suffer from platform-specific bugs. 
-Advanced users can attempt compilation from source, but pre-built installers and archives are available at https://market-engine.xyz for a quick and stable setup.
+Advanced users can attempt compilation from source, but a pre-built installer and archives are available at https://market-engine.xyz for a quick and stable setup.
 
 ## Base Setup
 Create root market engine directory  
