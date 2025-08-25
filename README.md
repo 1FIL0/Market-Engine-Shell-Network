@@ -3,6 +3,10 @@
 ## Overview
 This repo contains various build systems and configurations for Market Engine, all done in BASH. In order to use this system, you must use either linux + bash or windows + MSYS2
 
+## Notice
+Compiling this project on Windows is tricky and suffers from platform-specific bugs. 
+Advanced users can attempt compilation from source, but a pre-built installer is available at https://market-engine.xyz for a quick and stable setup.
+
 ## Base Setup
 Create root market engine directory  
 ```
