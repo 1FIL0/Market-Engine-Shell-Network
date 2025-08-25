@@ -30,7 +30,7 @@ sudo apt install rapidjson-dev libssl-dev python3
 ```
 create venvs and install libraries
 ```
-mkdir -p venvs/linux_x86_64/client_venv && mkdir venvs/linux_x86_64/api_venv && source venvs/linux_x86_64/client_venv/bin/activate && python3 -m pip install keyring pyqt5 && deactivate && source venvs/linux_x86_64/api_venv/bin/activate && python3 -m pip install requests dotenv
+mkdir -p venvs/linux_x86_64/ && python3 -m venv venvs/linux_x86_64/client_venv venvs/linux_x86_64/api_venv && source venvs/linux_x86_64/client_venv/bin/activate && python3 -m pip install keyring pyqt5 && deactivate && source venvs/linux_x86_64/api_venv/bin/activate && python3 -m pip install requests dotenv && deactivate
 ```
 
 ## After setup
