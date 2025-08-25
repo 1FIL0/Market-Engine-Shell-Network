@@ -4,7 +4,7 @@
 This repo contains various build systems and configurations for Market Engine, all done in BASH. In order to use this system, you must use either linux + bash or windows + MSYS2
 
 ## Notice
-Compiling this project on Windows is tricky and suffers from platform-specific bugs. 
+Compiling this project on Windows is tricky and may suffer from platform-specific bugs. 
 Advanced users can attempt compilation from source, but a pre-built installer is available at https://market-engine.xyz for a quick and stable setup.
 
 ## Base Setup
@@ -16,24 +16,48 @@ Clone necessary repositories
 ```
 git clone https://github.com/1FIL0/Market-Engine-Client market_engine_client && git clone https://github.com/1FIL0/Market-Engine-API market_engine_api && git clone https://github.com/1FIL0/Market-Engine-Share market_engine_share && git clone https://github.com/1FIL0/Market-Engine-Shell-Network market_engine_shell_network && git clone https://github.com/1FIL0/Market-Engine-Assets market_engine_assets
 ```
-install GPU drivers with included opencl support and the opencl runtime
+Install GPU drivers with included opencl support and the opencl runtime
 
 ## Windows setup
-install MSYS2 from https://www.msys2.org/  
-open the MSYS2 mingw64 terminal  
+Install MSYS2 from https://www.msys2.org/  
+Add msys64\mingw64\bin to PATH.  
+Open the MSYS2 mingw64 terminal  
 ```
 pacman -Syu && pacman -S mingw-w64-x86_64-opencl-icd mingw-w64-x86_64-opencl-headers mingw-w64-x86_64-opencl-clhpp mingw-w64-x86_64-rapidjson mingw-w64-x86_64-openssl`
 ```  
-if terminal closes after update, reopen and rerun the command  
-install python https://www.python.org/  
+If terminal closes after update, reopen and rerun the command  
+
+Install Python https://www.python.org/  
+Open PowerShell window  
+go to the MarketEngine root directory
+```
+# Create directories
+New-Item -ItemType Directory -Force -Path "venvs\windows_x86_64" 
+
+# Create venvs
+python -m venv venvs\windows_x86_64\client_venv
+python -m venv venvs\windows_x86_64\api_venv
+
+# Install python client packages
+& venvs\windows_x86_64\client_venv\Scripts\Activate.ps1
+python -m pip install --upgrade pip
+python -m pip install keyring pyqt5
+deactivate
+
+# install python API packages
+& venvs\windows_x86_64\api_venv\Scripts\Activate.ps1
+python -m pip install --upgrade pip
+python -m pip install requests python-dotenv
+deactivate
+```
 
 ## Linux setup
-install packages
+Open terminal with bash shell
 ```
+# Install packages
 sudo apt install rapidjson-dev libssl-dev python3
-```
-create venvs and install libraries
-```
+
+# Create venvs and install packages
 mkdir -p venvs/linux_x86_64/ && python3 -m venv venvs/linux_x86_64/client_venv venvs/linux_x86_64/api_venv && source venvs/linux_x86_64/client_venv/bin/activate && python3 -m pip install keyring pyqt5 && deactivate && source venvs/linux_x86_64/api_venv/bin/activate && python3 -m pip install requests dotenv && deactivate
 ```
 
