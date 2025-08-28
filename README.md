@@ -29,7 +29,7 @@ If terminal closes after update, reopen and rerun the command
 
 Install Python https://www.python.org/  
 Open PowerShell window  
-go to the MarketEngine root directory
+Go to the MarketEngine root directory
 ```
 # Create directories
 New-Item -ItemType Directory -Force -Path "venvs\windows_x86_64" 
@@ -53,6 +53,7 @@ deactivate
 
 ## Linux setup
 Open terminal with bash shell
+go to the MarketEngine root directory
 ```
 # Install packages
 sudo apt install python3 rapidjson-dev libssl-dev ocl-icd-opencl-dev opencl-headers opencl-clhpp-headers
