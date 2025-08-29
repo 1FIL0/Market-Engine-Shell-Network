@@ -72,7 +72,7 @@ Create gui windows and icons
 cd configure && ./configure_qt_docs.sh && cd ..
 ```
 
-## Make Market Engine Client/API 7Zip Archive
+## Make 7Zip Archives
 ```
 cd make
 ```  
@@ -94,7 +94,7 @@ Linux Market Engine API
 ```
 The archives are stored in the market_engine_shell_network/zip folder
 
-## Make Market Engine Client/API AppImage
+## Make AppImages
 download the appimagetool from https://github.com/AppImage/appimagetool  
 place the appimage tool in market_engine_shell_network/appimg  
 ```
