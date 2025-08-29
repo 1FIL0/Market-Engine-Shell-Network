@@ -23,7 +23,7 @@ Install MSYS2 from https://www.msys2.org/
 Add msys64\mingw64\bin to PATH.  
 Open the MSYS2 mingw64 terminal  
 ```
-pacman -Syu && pacman -S mingw-w64-x86_64-toolchain mingw-w64-x86_64-opencl-icd mingw-w64-x86_64-opencl-headers mingw-w64-x86_64-opencl-clhpp mingw-w64-x86_64-rapidjson mingw-w64-x86_64-openssl mingw-w64-x86_64-cmake mingw-w64-x86_64-make vim p7zip`
+pacman -Syu && pacman -S mingw-w64-x86_64-toolchain mingw-w64-x86_64-opencl-icd mingw-w64-x86_64-opencl-headers mingw-w64-x86_64-opencl-clhpp mingw-w64-x86_64-rapidjson mingw-w64-x86_64-openssl mingw-w64-x86_64-python-pyqt5 mingw-w64-x86_64-gcc mingw-w64-x86_64-cmake mingw-w64-x86_64-make vim p7zip
 ```  
 If terminal closes after update, reopen and rerun the command  
 
@@ -35,19 +35,19 @@ Go to the MarketEngine root directory
 New-Item -ItemType Directory -Force -Path "venvs\windows_x86_64" 
 
 # Create venvs
-python -m venv venvs\windows_x86_64\client_venv
-python -m venv venvs\windows_x86_64\api_venv
+Py -m venv venvs\windows_x86_64\client_venv
+Py -m venv venvs\windows_x86_64\api_venv
 
 # Install python client packages
 & venvs\windows_x86_64\client_venv\Scripts\Activate.ps1
-python -m pip install --upgrade pip
-python -m pip install keyring pyqt5 flask pyinstaller pyopencl
+Py -m pip install --upgrade pip
+Py -m pip install keyring pyqt5 flask pyinstaller pyopencl
 deactivate
 
 # install python API packages
 & venvs\windows_x86_64\api_venv\Scripts\Activate.ps1
-python -m pip install --upgrade pip
-python -m pip install requests dotenv
+Py -m pip install --upgrade pip
+Py -m pip install requests dotenv
 deactivate
 ```
 
