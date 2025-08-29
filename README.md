@@ -23,7 +23,7 @@ Install MSYS2 from https://www.msys2.org/
 Add msys64\mingw64\bin to PATH.  
 Open the MSYS2 mingw64 terminal  
 ```
-pacman -Syu && pacman -S mingw-w64-x86_64-toolchain mingw-w64-x86_64-opencl-icd mingw-w64-x86_64-opencl-headers mingw-w64-x86_64-opencl-clhpp mingw-w64-x86_64-rapidjson mingw-w64-x86_64-openssl`
+pacman -Syu && pacman -S mingw-w64-x86_64-toolchain mingw-w64-x86_64-opencl-icd mingw-w64-x86_64-opencl-headers mingw-w64-x86_64-opencl-clhpp mingw-w64-x86_64-rapidjson mingw-w64-x86_64-openssl mingw-w64-x86_64-cmake mingw-w64-x86_64-make vim`
 ```  
 If terminal closes after update, reopen and rerun the command  
 
