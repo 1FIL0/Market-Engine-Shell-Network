@@ -41,7 +41,7 @@ Py -m venv venvs\windows_x86_64\api_venv
 # Install python client packages
 & venvs\windows_x86_64\client_venv\Scripts\Activate.ps1
 Py -m pip install --upgrade pip
-Py -m pip install keyring pyqt5 flask pyinstaller pyopencl
+Py -m pip install keyring pyqt5 flask pyinstaller pyopencl requests
 deactivate
 
 # install python API packages
@@ -59,7 +59,7 @@ go to the MarketEngine root directory
 sudo apt install python3 rapidjson-dev libssl-dev ocl-icd-opencl-dev opencl-headers opencl-clhpp-headers 7zip p7zip cmake make
 
 # Create venvs and install packages
-mkdir -p venvs/linux_x86_64/ && python3 -m venv venvs/linux_x86_64/client_venv venvs/linux_x86_64/api_venv && source venvs/linux_x86_64/client_venv/bin/activate && python3 -m pip install keyring pyqt5 flask pyinstaller pyopencl && deactivate && source venvs/linux_x86_64/api_venv/bin/activate && python3 -m pip install requests dotenv && deactivate
+mkdir -p venvs/linux_x86_64/ && python3 -m venv venvs/linux_x86_64/client_venv venvs/linux_x86_64/api_venv && source venvs/linux_x86_64/client_venv/bin/activate && python3 -m pip install keyring pyqt5 flask pyinstaller pyopencl requests && deactivate && source venvs/linux_x86_64/api_venv/bin/activate && python3 -m pip install requests dotenv && deactivate
 ```
 
 ## After setup
