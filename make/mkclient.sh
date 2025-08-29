@@ -42,5 +42,5 @@ echo "--- MAKING M.E CLIENT SONAR ---"
 echo ""
 
 $PPRO_PLATFORM_PROGRAM_COMMAND_RUN_VENV_PYTHON -m PyInstaller --onedir --paths=$MARKET_ENGINE_SHARE_SRC $MARKET_ENGINE_CLIENT_SONAR/src/main.py\
-    --add-data $PPRO_MARKET_ENGINE_ASSETS_DEMANGLED_PATH:assets --workpath $PPRO_CLIENT_SONAR_BUILD/build  --distpath $PPRO_CLIENT_SONAR_BUILD/dist\
+    --add-data $PPRO_MARKET_ENGINE_ASSETS_DEMANGLED_PATH:assets --workpath $PPRO_CLIENT_SONAR_BUILD/build --distpath $PPRO_CLIENT_SONAR_BUILD/dist\
     --specpath $PPRO_CLIENT_SONAR_BUILD -n sonar
