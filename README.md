@@ -23,7 +23,7 @@ Install MSYS2 from https://www.msys2.org/
 Add msys64\mingw64\bin to PATH.  
 Open the MSYS2 mingw64 terminal  
 ```
-pacman -Syu && pacman -S mingw-w64-x86_64-toolchain mingw-w64-x86_64-opencl-icd mingw-w64-x86_64-opencl-headers mingw-w64-x86_64-opencl-clhpp mingw-w64-x86_64-rapidjson mingw-w64-x86_64-openssl mingw-w64-x86_64-cmake mingw-w64-x86_64-make vim`
+pacman -Syu && pacman -S mingw-w64-x86_64-toolchain mingw-w64-x86_64-opencl-icd mingw-w64-x86_64-opencl-headers mingw-w64-x86_64-opencl-clhpp mingw-w64-x86_64-rapidjson mingw-w64-x86_64-openssl mingw-w64-x86_64-cmake mingw-w64-x86_64-make vim p7zip`
 ```  
 If terminal closes after update, reopen and rerun the command  
 
@@ -56,7 +56,7 @@ Open terminal with bash shell
 go to the MarketEngine root directory
 ```
 # Install packages
-sudo apt install python3 rapidjson-dev libssl-dev ocl-icd-opencl-dev opencl-headers opencl-clhpp-headers
+sudo apt install python3 rapidjson-dev libssl-dev ocl-icd-opencl-dev opencl-headers opencl-clhpp-headers 7zip p7zip cmake make
 
 # Create venvs and install packages
 mkdir -p venvs/linux_x86_64/ && python3 -m venv venvs/linux_x86_64/client_venv venvs/linux_x86_64/api_venv && source venvs/linux_x86_64/client_venv/bin/activate && python3 -m pip install keyring pyqt5 flask pyinstaller pyopencl && deactivate && source venvs/linux_x86_64/api_venv/bin/activate && python3 -m pip install requests dotenv && deactivate
