@@ -6,12 +6,8 @@ source $UTILS_PATH/platform_program_commands.sh PROGRAM=CLIENT $@
 
 ./check_make_binaries.sh $@ PROGRAM=CLIENT
 
-<<<<<<< HEAD
-echo "--- PREPARING ---"
-=======
 echo ""
 echo "--- CLEANING ---"
->>>>>>> b86a90a (fixes)
 
 rm -rf $PPRO_ZIP_DIR_PATH/bin 2> /dev/null
 mkdir $PPRO_ZIP_DIR_PATH/bin
