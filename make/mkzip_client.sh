@@ -6,14 +6,19 @@ source $UTILS_PATH/platform_program_commands.sh PROGRAM=CLIENT $@
 
 ./check_make_binaries.sh $@ PROGRAM=CLIENT
 
-rm -r $PPRO_ZIP_DIR_PATH/bin 2> /dev/null
+echo "--- PREPARING ---"
+
+rm -rf $PPRO_ZIP_DIR_PATH/bin 2> /dev/null
 mkdir $PPRO_ZIP_DIR_PATH/bin
 
-cp $PPRO_CLIENT_APPLICATION_BUILD/dist/* $PPRO_ZIP_DIR_PATH/bin
-cp $PPRO_CLIENT_SONAR_BUILD/dist/* $PPRO_ZIP_DIR_PATH/bin
-cp $PPRO_CLIENT_ENGINE_BUILD/* $PPRO_ZIP_DIR_PATH/bin
-
 echo ""
+echo "--- COPYING FILES ---"
+echo ""
+
+cp -r $PPRO_CLIENT_APPLICATION_BUILD/dist/* $PPRO_ZIP_DIR_PATH/bin
+cp -r $PPRO_CLIENT_SONAR_BUILD/dist/* $PPRO_ZIP_DIR_PATH/bin
+cp -r $PPRO_CLIENT_ENGINE_BUILD/* $PPRO_ZIP_DIR_PATH/bin
+
 echo "--- CREATING ZIP ARCHIVE ---"
 echo ""
 

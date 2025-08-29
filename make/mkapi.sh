@@ -4,6 +4,10 @@ HERE="$(dirname "$(readlink -f "${BASH_SOURCE[0]}")")"
 UTILS_PATH=$HERE/../utils
 source $UTILS_PATH/platform_program_commands.sh PROGRAM=API $@
 
+echo ""
+echo "--- PREPARING ---"
+echo ""
+
 rm -r $PPRO_API_SONAR_BUILD/* 2> /dev/null
 source $PPRO_PLATFORM_PROGRAM_ACTIVATE_VENV
 

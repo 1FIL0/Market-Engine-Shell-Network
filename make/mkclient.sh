@@ -4,15 +4,18 @@ HERE="$(dirname "$(readlink -f "${BASH_SOURCE[0]}")")"
 UTILS_PATH=$HERE/../utils
 source $UTILS_PATH/platform_program_commands.sh PROGRAM=CLIENT $@
 
+echo ""
+echo "--- PREPARING ---"
+
+cd $MARKET_ENGINE_CLIENT_TRADEUP_ENGINE/build/
+rm -r $PPRO_CLIENT_APPLICATION_BUILD/* 2> /dev/null
+rm -r $PPRO_CLIENT_SONAR_BUILD/* 2> /dev/null
+rm -r $PPRO_CLIENT_ENGINE_BUILD/* 2> /dev/null
 
 echo ""
 echo "--- MAKING M.E CLIENT TRADEUP ENGINE ---"
 echo ""
 
-cd $MARKET_ENGINE_CLIENT_TRADEUP_ENGINE/build/
-rm -r $PPRO_CLIENT_APPLICATION_BUILD/*
-rm -r $PPRO_CLIENT_SONAR_BUILD/*
-rm -r $PPRO_CLIENT_ENGINE_BUILD/*
 
 if [[ $ARG_PLATFORM == $PLATFORM_LINUX_X86_64 ]]; then
     ./clear_linux64.sh
