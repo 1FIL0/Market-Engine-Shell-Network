@@ -5,7 +5,11 @@ UTILS_PATH=$HERE/../utils
 source $UTILS_PATH/platform_program_commands.sh PROGRAM=CLIENT $@
 
 echo ""
+<<<<<<< HEAD
 echo "--- PREPARING ---"
+=======
+echo "--- CLEANING ---"
+>>>>>>> b86a90a (fixes)
 
 cd $MARKET_ENGINE_CLIENT_TRADEUP_ENGINE/build/
 rm -r $PPRO_CLIENT_APPLICATION_BUILD/* 2> /dev/null

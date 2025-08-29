@@ -5,8 +5,12 @@ UTILS_PATH=$HERE/../utils
 source $UTILS_PATH/platform_program_commands.sh PROGRAM=API $@
 
 echo ""
+<<<<<<< HEAD
 echo "--- PREPARING ---"
 echo ""
+=======
+echo "--- CLEANING ---"
+>>>>>>> b86a90a (fixes)
 
 rm -r $PPRO_API_SONAR_BUILD/* 2> /dev/null
 source $PPRO_PLATFORM_PROGRAM_ACTIVATE_VENV
