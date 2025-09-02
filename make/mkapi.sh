@@ -15,5 +15,13 @@ echo "--- MAKING M.E API SONAR ---"
 echo ""
 
 $PPRO_PLATFORM_PROGRAM_COMMAND_RUN_VENV_PYTHON -m PyInstaller --onedir --paths=$MARKET_ENGINE_SHARE_SRC $MARKET_ENGINE_API_SONAR/src/main.py\
-    --workpath $PPRO_API_SONAR_BUILD/build  --distpath $PPRO_API_SONAR_BUILD/dist\
+    --workpath $PPRO_API_SONAR_BUILD/build --distpath $PPRO_API_SONAR_BUILD/dist\
     --specpath $PPRO_API_SONAR_BUILD -n sonar
+
+echo ""
+echo "--- MAKING M.E API LAUNCHER ---"
+echo ""
+
+$PPRO_PLATFORM_PROGRAM_COMMAND_RUN_VENV_PYTHON -m PyInstaller --onedir --paths=$MARKET_ENGINE_SHARE_SRC $MARKET_ENGINE_API_LAUNCHER/src/main.py\
+    --workpath $PPRO_API_LAUNCHER_BUILD/build --distpath $PPRO_API_LAUNCHER_BUILD/dist\
+    --specpath $PPRO_API_LAUNCHER_BUILD -n launcher
