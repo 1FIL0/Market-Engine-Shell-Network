@@ -20,6 +20,7 @@ rm -r $APP_BIN_DIR/* 2> /dev/null
 cp -r $PPRO_CLIENT_APPLICATION_BUILD/dist/* $APP_BIN_DIR 2> /dev/null
 cp -r $PPRO_CLIENT_SONAR_BUILD/dist/* $APP_BIN_DIR 2> /dev/null
 cp -r $PPRO_CLIENT_ENGINE_BUILD/* $APP_BIN_DIR 2> /dev/null
+cp -r $PPRO_CLIENT_LAUNCHER_BUILD/dist/* $APP_BIN_DIR 2> /dev/null
 
 ARCH=x86_64 $APPIMG_PATH/appimagetool-x86_64.AppImage $APPIMG_CLIENT_DIR
 mv $APPIMG_CLIENT_NAME $APPIMG_PATH

@@ -17,6 +17,7 @@ rm -r $APP_BIN_DIR/* 2> /dev/null
 
 ./check_make_binaries.sh PROGRAM=API $@
 cp -r $PPRO_API_SONAR_BUILD/dist/* $APP_BIN_DIR 2> /dev/null
+cp -r $PPRO_API_LAUNCHER_BUILD/dist/* $APP_BIN_DIR 2> /dev/null
 
 ARCH=x86_64 $APPIMG_PATH/appimagetool-x86_64.AppImage $APPIMG_API_DIR
 mv $APPIMG_API_NAME $APPIMG_PATH
