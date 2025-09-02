@@ -8,6 +8,7 @@ echo ""
 echo "--- CLEANING ---"
 
 rm -r $PPRO_API_SONAR_BUILD/* 2> /dev/null
+rm -r $PPRO_API_LAUNCHER_BUILD/* 2> /dev/null
 source $PPRO_PLATFORM_PROGRAM_ACTIVATE_VENV
 
 echo ""

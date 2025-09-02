@@ -17,6 +17,7 @@ echo "--- COPYING FILES ---"
 echo ""
 
 cp -r $PPRO_API_SONAR_BUILD/dist/* $PPRO_ZIP_DIR_PATH/bin
+cp -r $PPRO_API_LAUNCHER_BUILD/dist/* $PPRO_ZIP_DIR_PATH/bin
 
 echo "--- CREATING ZIP ARCHIVE ---"
 echo ""

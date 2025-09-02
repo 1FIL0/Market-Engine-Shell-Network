@@ -11,6 +11,7 @@ cd $MARKET_ENGINE_CLIENT_TRADEUP_ENGINE/build/
 rm -r $PPRO_CLIENT_APPLICATION_BUILD/* 2> /dev/null
 rm -r $PPRO_CLIENT_SONAR_BUILD/* 2> /dev/null
 rm -r $PPRO_CLIENT_ENGINE_BUILD/* 2> /dev/null
+rm -r $PPRO_CLIENT_LAUNCHER_BUILD/* 2> /dev/null
 
 echo ""
 echo "--- MAKING M.E CLIENT TRADEUP ENGINE ---"
