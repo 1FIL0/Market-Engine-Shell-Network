@@ -9,7 +9,7 @@ source $UTILS_PATH/platform_program_commands.sh PROGRAM=API $@
 echo ""
 echo "--- CLEANING ---"
 
-rm -rf $PPRO_ZIP_DIR_PATH/bin 2> /dev/null
+rm -rf $PPRO_ZIP_DIR_PATH/*
 mkdir $PPRO_ZIP_DIR_PATH/bin
 
 echo ""
@@ -17,7 +17,8 @@ echo "--- COPYING FILES ---"
 echo ""
 
 cp -r $PPRO_API_SONAR_BUILD/dist/* $PPRO_ZIP_DIR_PATH/bin
-cp -r $PPRO_API_LAUNCHER_BUILD/dist/* $PPRO_ZIP_DIR_PATH/bin
+cp -r $PPRO_API_LAUNCHER_BUILD/dist/* $PPRO_ZIP_DIR_PATH
+cp $MARKET_ENGINE_SHELL_NETWORK/LICENSE $PPRO_ZIP_DIR_PATH
 
 echo "--- CREATING ZIP ARCHIVE ---"
 echo ""
