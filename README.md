@@ -1,11 +1,12 @@
 ![](readme_assets/market_engine_shell_network.png)
 # Market Engine Shell Network
 ## Overview
-This repo contains various build systems and configurations for Market Engine, all done in BASH. In order to use this system, you must use either linux + bash or windows + MSYS2
+This repo contains various build systems and configurations for Market Engine, all done in BASH. In order to use this system, you must use either linux + bash or windows + MSYS2  
+Website: https://marketengine.onefil.dev
 
 ## Notice
-Compiling this project on Windows is tricky and may suffer from platform-specific bugs. 
-Advanced users can attempt compilation from source, but a pre-built installer and archives are available at https://market-engine.xyz for a quick and stable setup.
+Compiling this project on Windows is tricky and I had to create some workarounds which hopefully don't break. 
+Advanced users can attempt compilation from source, but a pre-built installer and archives are available at https://marketengine.onefil.dev/downloads for a quick and stable setup.
 
 ## Base Setup
 Create root market engine directory  
@@ -110,5 +111,5 @@ Linux Market Engine API
 ```
 The appimages are stored in the market_engine_shell_network/appimg folder
 
-## LICENCE
-Market Engine is licenced under the GPL-V3.0 licence
+## LICENSE
+GPL-V3.0 license
