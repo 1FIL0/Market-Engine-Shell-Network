@@ -60,7 +60,7 @@ go to the MarketEngine root directory
 sudo apt install python3 rapidjson-dev libssl-dev ocl-icd-opencl-dev opencl-headers opencl-clhpp-headers 7zip p7zip cmake make
 
 # Create venvs and install packages
-mkdir -p venvs/linux_x86_64/ && python3 -m venv venvs/linux_x86_64/client_venv venvs/linux_x86_64/api_venv && source venvs/linux_x86_64/client_venv/bin/activate && python3 -m pip install keyring pyqt5 flask pyopencl requests pyinstaller && deactivate && source venvs/linux_x86_64/api_venv/bin/activate && python3 -m pip install requests dotenv pyinstaller && deactivate
+mkdir -p venvs/linux_x86_64/ && python3 -m venv venvs/linux_x86_64/client_venv venvs/linux_x86_64/api_venv && source venvs/linux_x86_64/client_venv/bin/activate && python3 -m pip install keyring pyqt5 flask pyopencl requests pyinstaller aiohttp qasync && deactivate && source venvs/linux_x86_64/api_venv/bin/activate && python3 -m pip install requests dotenv pyinstaller && deactivate
 ```
 
 ## After setup
@@ -111,5 +111,6 @@ Linux Market Engine API
 ```
 The appimages are stored in the market_engine_shell_network/appimg folder
 
-## LICENSE
-This project is licensed under GPL-V3.0
+## LICENCE
+This project is licenced under the GPL-V3.0 licence
+
