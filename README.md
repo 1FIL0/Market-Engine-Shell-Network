@@ -112,4 +112,4 @@ Linux Market Engine API
 The appimages are stored in the market_engine_shell_network/appimg folder
 
 ## LICENSE
-GPL-V3.0 license
+This project is licensed under GPL-V3.0
