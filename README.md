@@ -12,7 +12,7 @@ https://marketengine.onefil.dev
 
 ## Notice
 
-Compiling this project on Windows had some issues in the past and I had to create some workarounds which may break in the future.
+Compiling the Market Engine projects on Windows had some issues in the past and I had to create some workarounds which may break in the future.
 Advanced users can attempt compilation from source, but a pre-built installer is available at https://marketengine.onefil.dev/downloads for a quick and stable setup.
 
 ## Base Setup
