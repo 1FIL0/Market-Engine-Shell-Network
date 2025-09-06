@@ -4,7 +4,7 @@
 
 ## Overview
 
-This repo contains various build systems and configurations for Market Engine, all done in BASH. In order to use this system, you must use either linux + bash or windows + MSYS2
+This repo contains various build systems and configuration scripts for the Market Engine Client and API. all done in BASH. In order to use this system, you must use either Linux + BASH or Windows + MSYS2
 
 ## Website
 
@@ -12,8 +12,8 @@ https://marketengine.onefil.dev
 
 ## Notice
 
-Compiling this project on Windows is tricky and I had to create some workarounds which hopefully don't break.
-Advanced users can attempt compilation from source, but a pre-built installer and archives are available at https://marketengine.onefil.dev/downloads for a quick and stable setup.
+Compiling this project on Windows had some issues in the past and I had to create some workarounds which may break in the future.
+Advanced users can attempt compilation from source, but a pre-built installer is available at https://marketengine.onefil.dev/downloads for a quick and stable setup.
 
 ## Base Setup
 
@@ -70,7 +70,7 @@ deactivate
 
 ## Linux setup
 
-Open terminal with bash shell
+Open terminal with BASH shell
 go to the MarketEngine root directory
 
 ```
