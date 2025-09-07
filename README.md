@@ -152,4 +152,4 @@ The appimages are stored in the market_engine_shell_network/appimg folder
 
 ## LICENCE
 
-This project is licenced under the GPL-V3.0 licence
+This project is licenced under the GPL-V3.0 licence, refer to LICENCE
