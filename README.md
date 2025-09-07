@@ -58,7 +58,7 @@ Py -m venv venvs\windows_x86_64\api_venv
 # Install python client packages
 & venvs\windows_x86_64\client_venv\Scripts\Activate.ps1
 Py -m pip install --upgrade pip
-Py -m pip install keyring pyqt5 flask pyopencl requests pyinstaller
+Py -m pip install keyring pyqt5 flask pyopencl requests pyinstaller aiohttp qasync
 deactivate
 
 # install python API packages
