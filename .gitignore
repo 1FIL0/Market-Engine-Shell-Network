@@ -5,3 +5,4 @@ bin
 dist/*
 *runtime*
 *.AppImage
+*.AppDir/LICENCE*
