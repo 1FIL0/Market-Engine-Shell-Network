@@ -5,7 +5,7 @@
 This package contains Market Engine API binaries. Please read carefully before use.
 
 1. Source Code
-    - Copyright (C) 2025 OneFil (1FIL0) https://github.com/1FIL0
-    - All source code in this repository is licensed under the
-      GNU General Public License v3.0 (GPL-3.0).
-    - See LICENSE_GPL3.txt for the full license text.
+    Copyright (C) 2025 OneFil (1FIL0) https://github.com/1FIL0/
+    This distribution contains compiled binaries under the GPL3 licence. The corresponding source
+    code is available at: https://github.com/1FIL0/Market-Engine-API.
+    See LICENSE_GPL3.txt for the full license text.
