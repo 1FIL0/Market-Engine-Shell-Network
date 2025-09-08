@@ -5,3 +5,5 @@ bin
 dist/*
 *runtime*
 *.AppImage
+appimg/market_engine_client.AppDir/LICENCE*
+appimg/market_engine_api.AppDir/LICENCE*
