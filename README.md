@@ -4,7 +4,8 @@
 
 ## Overview
 
-This repo contains various build systems and configuration scripts for the Market Engine Client and API. all done in BASH. In order to use this system, you must use either Linux + BASH or Windows + MSYS2
+This repo contains various build systems and configuration scripts for the Market Engine Client and API. all done in BASH. In order to use this system, you must use either Linux + BASH or Windows + MSYS2  
+Part of the Market Engine project.
 
 ## Website
 
