@@ -30,9 +30,3 @@ third-party logos. Please read carefully before use.
     - Copyright (C) 2025 OneFil (1FIL0) https://github.com/1FIL0
     - Licensed under the SIL Open Font License (OFL)
     - See LICENCE_OFL_1.1.txt for details.
-
-5. Other assets
-    - Definition: Any unmentioned assets
-    - Copyright (C) 2025 OneFil (1FIL0) https://github.com/1FIL0
-    - Licensed under the GNU General Public License v3.0 (GPL-3.0).
-    - See LICENSE_GPL3.txt for the full license text.
