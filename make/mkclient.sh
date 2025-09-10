@@ -23,6 +23,8 @@ if [[ $ARG_PLATFORM == $PLATFORM_LINUX_X86_64 ]]; then
     ./make_linux64.sh
     cp build_linux64/engine $PPRO_CLIENT_ENGINE_BUILD
     cd $HERE
+    cp /lib/x86_64-linux-gnu/libcrypto.so.3 $PPRO_CLIENT_ENGINE_BUILD_LIB
+    cp /lib/x86_64-linux-gnu/libgomp.so.1 $PPRO_CLIENT_ENGINE_BUILD_LIB
 elif [[ $ARG_PLATFORM == $PLATFORM_WINDOWS_X86_64 ]]; then
     ./clear_win64.sh
     ./make_win64.sh
