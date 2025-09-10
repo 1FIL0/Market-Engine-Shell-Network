@@ -32,9 +32,7 @@ elif [[ $ARG_PLATFORM == $PLATFORM_WINDOWS_X86_64 ]]; then
     cp build_win64/engine $PPRO_CLIENT_ENGINE_BUILD
     cd $HERE
     cp /mingw64/bin/libgomp-1.dll $PPRO_CLIENT_ENGINE_BUILD_LIB
-    cp /mingw64/bin/libgcc_s_seh-1.dll $PPRO_CLIENT_ENGINE_BUILD_LIB
     cp /mingw64/bin/libcrypto-3-x64.dll $PPRO_CLIENT_ENGINE_BUILD_LIB
-    cp /mingw64/bin/libstdc++-6.dll $PPRO_CLIENT_ENGINE_BUILD_LIB
 fi
 
 source $PPRO_PLATFORM_PROGRAM_ACTIVATE_VENV

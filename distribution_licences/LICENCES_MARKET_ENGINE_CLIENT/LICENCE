@@ -1,0 +1,63 @@
+=================================================================
+                Market Engine Client Licence Summary
+=================================================================
+
+This package contains binaries, fonts, assets, third-party logos,
+and third-party libraries. Please read carefully before use.
+
+===================================================================
+
+1. Source Code
+    Copyright (C) 2025 OneFil (1FIL0) https://github.com/1FIL0/
+    This distribution contains compiled binaries under the GPLv3 licence. The corresponding source
+    code is available at: https://github.com/1FIL0/Market-Engine-Client.
+    See LICENCES_MARKET_ENGINE_CLIENT/LICENCE_SOURCE.txt for the full license text.
+
+===================================================================
+
+2. Market Engine Assets
+    - Definition: Any icons, logos, or other graphics that represent
+    the Market Engine identity (e.g., app icon, wordmarks). Also includes
+    all non-third party icons.
+    - Copyright (C) 2025 OneFil (1FIL0) https://github.com/1FIL0
+    - Proprietary, all rights reserved.
+    - These assets may not be redistributed, modified, or used to
+    represent other projects without explicit permission.
+
+===================================================================
+
+3. Third-Party Logos
+    - Logos and trademarks of their respective owners (e.g. Discord, YouTube, GitHub).
+    - Included for informational or integration purposes only.
+    - Not licensed for redistribution or modification.
+    - This project is not affiliated with or endorsed by the respective companies.
+
+===================================================================
+
+4. Included Fonts
+    This package includes the following fonts:
+
+    - SystemHud
+    See LICENCES_THIRD_PARTY/LICENCE_SystemHud.txt for details.
+
+===================================================================
+
+5. External Libraries
+    This application includes the following third-party libraries:
+    
+    - OpenSSL 3
+    License: Apache License 2.0
+    Full license text: LICENCES_THIRD_PARTY/LICENSE_OpenSSL.txt
+
+    - Libgomp
+    License: GNU General Public License v3 (GPLv3) + runtime exception
+    Full license text: LICENCES_THIRD_PARTY/LICENCE_libgomp_copying.txt + LICENCES_THIRD_PARTY/LICENCE_libgomp_copying_runtime.txt
+
+    - Rapidjson
+    License: MIT Licence
+    Full license text: LICENCES_THIRD_PARTY/LICENCE_rapidjson.txt
+
+    - Various Python libraries
+    Refer to: LICENCES_THIRD_PARTY/LICENCES_PIP_Client.json
+
+

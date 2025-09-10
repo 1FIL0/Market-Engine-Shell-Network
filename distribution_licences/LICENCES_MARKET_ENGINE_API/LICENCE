@@ -1,0 +1,21 @@
+=================================================================
+                Market Engine API Licence Summary
+=================================================================
+
+This package contains Market Engine API binaries and third-party libraries. Please read carefully before use.
+
+=================================================================
+
+1. Source Code
+    Copyright (C) 2025 OneFil (1FIL0) https://github.com/1FIL0/
+    This distribution contains compiled binaries under the GPL3 licence. The corresponding source
+    code is available at: https://github.com/1FIL0/Market-Engine-API.
+    See LICENCE_MARKET_ENGINE_API/LICENSE_SOURCE.txt for the full license text.
+
+=================================================================
+
+2. External Libraries
+    This application includes the following third-party libraries:
+    
+    - Various Python libraries
+    Refer to: LICENCES_THIRD_PARTY/LICENCES_PIP_Api.json
