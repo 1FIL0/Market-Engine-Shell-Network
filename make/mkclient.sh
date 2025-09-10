@@ -17,6 +17,7 @@ echo ""
 echo "--- MAKING M.E CLIENT TRADEUP ENGINE ---"
 echo ""
 
+mkdir -p $PPRO_CLIENT_ENGINE_BUILD_LIB
 
 if [[ $ARG_PLATFORM == $PLATFORM_LINUX_X86_64 ]]; then
     ./clear_linux64.sh

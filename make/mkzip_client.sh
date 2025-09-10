@@ -11,7 +11,7 @@ echo "--- CLEANING ---"
 
 rm -rf $PPRO_ZIP_DIR_PATH/*
 mkdir $PPRO_ZIP_DIR_PATH/bin
-mkdir $PPRO_ZIP_DIR_PATH/usr/lib
+mkdir -p $PPRO_ZIP_DIR_PATH/usr/lib
 
 echo ""
 echo "--- COPYING FILES ---"
@@ -19,7 +19,7 @@ echo ""
 
 cp -r $PPRO_CLIENT_APPLICATION_BUILD/dist/* $PPRO_ZIP_DIR_PATH/bin
 cp -r $PPRO_CLIENT_SONAR_BUILD/dist/* $PPRO_ZIP_DIR_PATH/bin
-cp -r $PPRO_CLIENT_ENGINE_BUILD/* $PPRO_ZIP_DIR_PATH/bin
+cp -r $PPRO_CLIENT_ENGINE_BUILD/engine $PPRO_ZIP_DIR_PATH/bin
 cp -r $PPRO_CLIENT_LAUNCHER_BUILD/dist/* $PPRO_ZIP_DIR_PATH
 
 cp $PPRO_CLIENT_ENGINE_BUILD_LIB/* $PPRO_ZIP_DIR_PATH/usr/lib
