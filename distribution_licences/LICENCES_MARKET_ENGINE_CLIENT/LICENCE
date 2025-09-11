@@ -11,7 +11,7 @@ and third-party libraries. Please read carefully before use.
     Copyright (C) 2025 OneFil (1FIL0) https://github.com/1FIL0/
     This distribution contains compiled binaries under the GPLv3 licence. The corresponding source
     code is available at: https://github.com/1FIL0/Market-Engine-Client.
-    See LICENCES_MARKET_ENGINE_CLIENT/LICENCE_SOURCE.txt for the full license text.
+    See /LICENCE_CODE.txt for the full license text.
 
 ===================================================================
 
@@ -55,7 +55,7 @@ and third-party libraries. Please read carefully before use.
 
     - Rapidjson
     License: MIT Licence
-    Full license text: LICENCES_THIRD_PARTY/LICENCE_rapidjson.txt
+    Full license text: LICENCES_THIRD_PARTY/LICENCE_RapidJson.txt
 
     - Various Python libraries
     Refer to: LICENCES_THIRD_PARTY/LICENCES_PIP_Client.json
