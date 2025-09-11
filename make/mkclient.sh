@@ -33,6 +33,9 @@ elif [[ $ARG_PLATFORM == $PLATFORM_WINDOWS_X86_64 ]]; then
     cd $HERE
     cp /mingw64/bin/libgomp-1.dll $PPRO_CLIENT_ENGINE_BUILD_LIB
     cp /mingw64/bin/libcrypto-3-x64.dll $PPRO_CLIENT_ENGINE_BUILD_LIB
+    cp /mingw64/bin/libwinpthread-1.dll $PPRO_CLIENT_ENGINE_BUILD_LIB
+    cp /mingw64/bin/libgcc_s_seh-1.dll $PPRO_CLIENT_ENGINE_BUILD_LIB
+    cp /mingw64/bin/libstdc++-6.dll $PPRO_CLIENT_ENGINE_BUILD_LIB
 fi
 
 source $PPRO_PLATFORM_PROGRAM_ACTIVATE_VENV
@@ -43,7 +46,7 @@ echo ""
 
 $PPRO_PLATFORM_PROGRAM_COMMAND_RUN_VENV_PYTHON -m PyInstaller --onedir --paths=$MARKET_ENGINE_SHARE_SRC $MARKET_ENGINE_CLIENT_APPLICATION/src/main.py\
     --add-data $PPRO_MARKET_ENGINE_ASSETS_DEMANGLED_PATH:market_engine_assets --workpath $PPRO_CLIENT_APPLICATION_BUILD/build --distpath $PPRO_CLIENT_APPLICATION_BUILD/dist\
-    --specpath $PPRO_CLIENT_APPLICATION_BUILD --noconsole -n application
+    --specpath $PPRO_CLIENT_APPLICATION_BUILD --noconsole --icon $MARKET_ENGINE_ASSETS_PATH/icons_market_engine_brand/market_engine_client_desktop.ico -n application
 
 
 echo ""
@@ -52,7 +55,7 @@ echo ""
 
 $PPRO_PLATFORM_PROGRAM_COMMAND_RUN_VENV_PYTHON -m PyInstaller --onedir --paths=$MARKET_ENGINE_SHARE_SRC $MARKET_ENGINE_CLIENT_SONAR/src/main.py\
     --add-data $PPRO_MARKET_ENGINE_ASSETS_DEMANGLED_PATH:market_engine_assets --workpath $PPRO_CLIENT_SONAR_BUILD/build --distpath $PPRO_CLIENT_SONAR_BUILD/dist\
-    --specpath $PPRO_CLIENT_SONAR_BUILD -n sonar
+    --specpath $PPRO_CLIENT_SONAR_BUILD --noconsole -n sonar
 
 echo ""
 echo "--- MAKING M.E CLIENT LAUNCHER ---"
