@@ -63,4 +63,4 @@ echo ""
 
 $PPRO_PLATFORM_PROGRAM_COMMAND_RUN_VENV_PYTHON -m PyInstaller --onefile --paths=$MARKET_ENGINE_SHARE_SRC $MARKET_ENGINE_CLIENT_LAUNCHER/src/main.py\
     --workpath $PPRO_CLIENT_LAUNCHER_BUILD/build --distpath $PPRO_CLIENT_LAUNCHER_BUILD/dist\
-    --specpath $PPRO_CLIENT_LAUNCHER_BUILD --noconsole --icon $MARKET_ENGINE_ASSETS_PATH/icons_market_engine_brand/market_engine_client_desktop.ico -n launcher
+    --specpath $PPRO_CLIENT_LAUNCHER_BUILD --icon $MARKET_ENGINE_ASSETS_PATH/icons_market_engine_brand/market_engine_client_desktop.ico -n launcher
