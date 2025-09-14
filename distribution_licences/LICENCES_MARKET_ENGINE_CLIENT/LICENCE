@@ -49,9 +49,13 @@ and third-party libraries. Please read carefully before use.
     License: Apache License 2.0
     Full license text: LICENCES_THIRD_PARTY/LICENSE_OpenSSL.txt
 
-    - GCC Libraries
+    - libgomp, libgcc_s_seh, libstdc++
     License: GNU General Public License v3 (GPLv3) + runtime exception
-    Full license text: LICENCES_THIRD_PARTY/LICENCE_GCC_copying.txt + LICENCES_THIRD_PARTY/LICENCE_GCC_copying_runtime.txt
+    Full license text: LICENCES_THIRD_PARTY/LICENCE_gcc_libs_copying.txt + LICENCES_THIRD_PARTY/LICENCE_gcc_libs_copying_runtime.txt
+
+    - libwinpthread
+    License: MIT AND BSD-3-Clause-Clear
+    Full license text: LICENCES_THIRD_PARTY/LICENCE_libwinpthread.txt
 
     - Rapidjson
     License: MIT Licence
